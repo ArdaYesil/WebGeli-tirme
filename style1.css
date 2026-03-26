@@ -26,7 +26,7 @@ a{
  background-color: #555;
 }
 #container{
-	background-image: url(image/arkaplan.jpg);
+	background-image: url(.image/arkaplan.jpg);
 	width: 100%;
 }
 .content{
