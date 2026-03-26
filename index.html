@@ -3,11 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?php 
-	include 'baglantı.php';
-	session_start();
-	ob_start();
-	?>
 	<title>Blog Tasarım</title>
 	<script type="text/javascript" src="jquery-3.6.3.js"></script>
 	<script type="text/javascript" src="jquery-3.6.3.min.js"></script>
@@ -29,126 +24,225 @@
  			
 
  		</div><!--Menu Div Bitişi -->
- 					<?php 
+ 					<div class="menuyazı" id="aydınlıkmenu">
+		<ul id="menu1">
+ 			<li><a href="index.php?sayfa&tema=aydinlik"><i class="fa-solid fa-house"></i> Anasayfa</a></li>
+ 			<li><a href="index.php?sayfa=bilgilendirme&tema=aydinlik"><i class="fa-solid fa-circle-info"></i> Bilgilendirme</a></li>
+ 			<li><a href="#footer"><i class="fa-solid fa-phone"></i> İletişim</a></li>
+ 			<li><a href="index.php?sayfa=hakkında&tema=aydinlik"><i class="fa-solid fa-address-card"></i> Hakkında</a></li>
+ 		</ul>	
+        <ul id="menu2">
+	
+				
+			<li><a class="icon-aydinlik" href="index.php?sayfa=ayarlar&tema=aydinlik"><i class="fa-solid fa-gear"></i></a></li>
+			<li><a class="icon-aydinlik" href=""><i class="fa-solid fa-user"></i></a></li>
+			<li><a class="icon-aydinlik" href="index.php?sayfa=cikis&tema=aydinlik"><i class="fa-solid fa-right-to-bracket"></i></a></li>';
+			
+		
+			<li><a class="icon-aydinlik" href="index.php?sayfa=panel&tema=aydinlik"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>';	
+			
 
- 					@$tema=$_GET['tema'];
- 					switch ($tema){
- 						case 'aydinlik':
- 							include 'aydinlikmenu.php';
- 							break;
- 						case 'karanlik':
- 							include 'karanlikmenu.php';
- 							break;
- 						default:
- 							include 'aydinlikmenu.php';
- 							break;
- 					}
- 					 ?>
+			
+ 		</ul>
+</div><!--MenuYazı Div Bitişi -->
 
- 	
- 			
- 			<?php 
- 			@$sayfa=$_GET['sayfa'];
- 			
-					if($sayfa=="panel")
-					{
-						
-					}
-					else
-					{
-						switch ($tema){
-                        case 'aydinlik':
-                          	  echo '<div class="content" id="aydınlıkcontent">';
-                           			 break;
-                        case 'karanlik':
-                         	   echo '<div class="content" id="karanlıkcontent">';
-                         			   break;
-                        default:
-                            echo '<div class="content" id="aydınlıkcontent">';
-                           	 break;
-                    }
-					}
+ <div class="content" id="aydınlıkcontent">
+
                         
 
 
- 			switch ($tema){
- 			case 'aydinlik':
- 				switch ($sayfa) {
- 				case 'bilgilendirme':
- 					include 'bılgı.php';
- 					break;
- 				case 'hakkında':
- 					include 'hakkında.php';
- 					break;
-				case 'ayarlar':
-					include 'ayarlar.php';
-					break;
-					case 'cikis':
-						include 'cikis.php';
-						header('Refresh:0;url=index.php?tema=aydinlik&sayfa');
-						break;
-					case 'panel':
-						include 'panel.php';
-						break;
- 				default:
- 					include 'default.php';
- 					break;
- 			}
- 				break;
+<div class="satır">
+	<div class="resim animate__animated animate__backInUp">
+		<img id="resim1" src="image/tony.webp" alt="resim yükleniyor...">
+	</div>
+	<div class="resyazı" id="yazı1">
+		   <h1>My Skills</h1>
+
+<p>HTML</p>
+<div class="kutu">
+  <div class="skills html">75%</div>
+</div>
+
+<p>CSS</p>
+<div class="kutu">
+  <div class="skills css">61%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="kutu">
+  <div class="skills js">30%</div>
+</div>
+
+<p>PHP</p>
+<div class="kutu">
+  <div class="skills php">55%</div>
+</div>
+<p>Python</p>
+<div class="kutu">
+  <div class="skills python">24%</div>
+</div>
+<p>SQL</p>
+<div class="kutu">
+  <div class="skills sql">40%</div>
+</div>
+<p>C#</p>
+<div class="kutu">
+  <div class="skills c">44%</div>
+</div>
+		
+	</div>
+</div>
+<br><hr><br>
+
+<div class="hobiler"><!-- Minecraft profil başlangıç -->
+	
+<div class="metin">
+	<h1 style="align:center ;""><b>Minecraft <i class="fa-solid fa-cubes mınecraft"></i></b></h1>
+	<br>
+	<h2>Kullanıcı Adı : Juns</h2>
+	<br>
+	<h2>Sürüm : 1.8.9</h2>
+	<br>
+	<h3>Oynanılan Süre : 6.714 h</h3>
+	<br>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	conse*quat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="resim">
+	<img src="image/indir.png" alt="resim yükleniyor...">
+</div>
+	
+</div><!-- Minecraft profil bitiş -->
+	
+	<hr>
+
+	<div class="hobiler"><!-- Pro Soccer profil başlangıç -->
+	
+	
+<div class="metin">
+	<h1 style="align:center ;"><b>Pro Soccer <i style="z-index: 4;" class="fa-regular fa-futbol fa-bounce"></i></b></h1>
+	<br>
+	<h2>Kullanıcı Adı : JunsButCiqOlan</h2>
+	<br>
+	<h2>Pozisyon : RB</h2>
+	<br>
+	<h3>Oynanılan Süre : 22.4 h</h3>
+	<br>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="resim">
+	<img src="image/karakter.png" alt="resim yükleniyor...">
+</div>
+	
+</div><!-- Pro Soccer profil bitiş -->
+	
+	<hr>
+
+	<div class="hobiler"><!-- Satranç profil başlangıç -->
+	
+<div class="metin">
+	<h1 style="align:center ;"><b>Satranç <i class="fa-sharp fa-solid fa-chess"></i></b></h1>
+	<br>
+	<h2>Kullanıcı Adı : JunsX</h2>
+	<br>
+	<h2>Elo : 1000</h2>
+	<br>
+	<h3>Oynanılan Süre : 32.1 h</h3>
+	<br>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="resim">
+	<img width="250px" height="350px" src="image/vezir.png" alt="resim yükleniyor...">
+</div>
+	
+</div><!-- Satranç profil bitiş -->
+	<hr>
+
+	<div class="hobiler"><!-- Clash Of Clans profil başlangıç -->
+	
+<div class="metin">
+	<h1 style="align:center ;"><b>Clash Of Clans<img id="clash" height="75px" width="100px" src="image/kalkan.png"></b></h1>
+	<br>
+	<h2>Kullanıcı Adı : Juns</h2>
+	<br>
+	<h2>Belediye Binası : 13</h2>
+	<br>
+	<h3>Oynanılan Süre : 352.7 h</h3>
+	<br>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="resim">
+	<img width="300px" height="300px" src="image/bBinası13.png" alt="resim yükleniyor...">
+</div>
+	
+</div><!-- Satranç profil bitiş -->
+	<hr>
 
 
- 			case 'karanlik':
- 				switch ($sayfa) {
- 				case 'bilgilendirme':
- 					include 'bılgı.php';
- 					break;
- 				case 'hakkında':
- 					include 'hakkında.php';
- 					break;
-				case 'cikis':
-					include 'cikis.php';
-					header('Refresh:0;url=index.php?tema=karanlik&sayfa');
-					break;
- 				default:
- 					include 'default.php';
- 					break;
- 			}
- 				break;
-				 default:
-				 include 'default.php';
-				 break;
- 			}
- 				
-
+	<div class="hobiler"><!-- Clash Royale profil başlangıç -->
+	
+<div class="metin">
+	<h1 style="align:center ;"><b>Clash Royale <i style="color: #eec700;"class="fa-solid fa-crown"></i></b></h1>
+	<br>
+	<h2>Kullanıcı Adı : Juns</h2>
+	<br>
+	<h2>Kupa : 6.100</h2>
+	<br>
+	<h3>Oynanılan Süre : 174.7 h</h3>
+	<br>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="resim">
+	<img width="300px" height="300px" src="image/clashroyale.png" alt="resim yükleniyor...">
+</div>
+	
+</div><!-- Clash Royale profil bitiş -->
+	
+			</div><!--Content Div Bitişi -->;
+			
  		
  		
-			if($sayfa=="panel")
-			{
+ 				<div id="footer" class="aydınlıkfooter"><!--footer Div Başlangıç -->
+ 						<a href="" title="Gmail Hesabı : yesilarda83@gmail.com">  <span id="bır"> <img width="30" height="30" src="image/gmaillogo.png"> Gmail</span> </a>  
+ 						<a href="#" title="İnstagram Hesabı" target="_blank"> <i class="fa-brands fa-instagram"></i><span id="ıkı"> instagram</span> </a>
+ 						<a href="https://discord.com/invite/starzso" title="Discord Hesabı" target="_blank"><i class="fa-brands fa-discord"></i> <span id="uc">Discord</span></a>
+ 						<a href="https://www.youtube.com/watch?v=O2ayBUoCCo0" title="Youtube Hesabı" target="_blank"><i class="fa-brands fa-youtube"></i><span id="dort">Youtube</span>  </a>
+ 					<div>
+ 					
+    						<div style="margin-top: 15px;" class="ortala">
+        						<a href=""><i class="fa-solid fa-lightbulb"></i></a>
+    						</div>
+ 					 	
+ 					</div>
 
-			}
-			else{
-				echo '</div><!--Content Div Bitişi -->';
-			}
- 		
- 		
- 					switch ($tema){
- 						case 'aydinlik':
- 							include 'aydinlikfooter.php';
- 							break;
- 						case 'karanlik':
- 							include 'karanlikfooter.php';
- 							break;
- 						default:
- 							include 'aydinlikfooter.php';
- 							break;
- 					}
+ 		</div><!--footer Div Bitişi -->
 
+ 	</div><!--Container Div Bitişi --> 
 
- 		 ?>
-
- 	</div><!--Container Div Bitişi --><?php 
-ob_end_flush(); 
-?>
  	</form>
  	
 
