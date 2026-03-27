@@ -41,12 +41,12 @@ a{
 }
 .menu{
 	width: 100%;
-	background: #FF5E35;
-	height: 60px;
 }
 .menuyazı{
 	display: flex;
 	justify-content: space-evenly;
+	background: #FF5E35;
+	height: 60px;
 }
 #menu1{
 	font-size: 22px;
@@ -82,12 +82,12 @@ a{
 	margin-right: 5px;
 	border-radius: 10px;
 }
-.menu .button:hover{
+.menuyazı .button:hover{
 	background-color: rgb(53, 50, 50);
 	color: #ffffff;
 	cursor: pointer;
 }
-.menu .button{
+.menuyazı .button{
 	background-color: #fff;
 	color: rgb(0, 0, 0);
 }
@@ -98,7 +98,7 @@ a{
 #menu1 li a{
 		color: white;
 }
-.menu #menu1 li a:hover{
+.menuyazı #menu1 li a:hover{
 	font-size: 25px;
 	border-bottom: 2px solid #fff;
 	text-shadow: 2px 0px 10px #fff;
