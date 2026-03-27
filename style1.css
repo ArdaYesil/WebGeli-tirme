@@ -244,39 +244,39 @@ transform: scale(1.3);
 }
 .css {
 	padding: 5px;
-	animation: css 2.5s forwards 1s ease;
+	animation: css 3s forwards 1s ease;
 	width: 0%; 
 	background-color: 
 	#2196F3;
 }
 .js {
 	padding: 5px;
-	animation: js 2.5s forwards 1s ease;
+	animation: js 3.5s forwards 1s ease;
 	width: 0%; 
 	background-color: 
 	#f44336;
 }
 .php {
 	padding: 5px;
-	animation: php 2.5s forwards 1s ease;
+	animation: php 4s forwards 1s ease;
 	width: 0%; 
 	background-color: #808080;
 }
 .python {
 	padding: 5px;
-	animation: python 2.5s forwards 1s ease;
+	animation: python 4.5s forwards 1s ease;
 	width: 0%; 
 	background-color: #DA70D6;
 }
 .sql {
 	padding: 5px;
-	animation: sql 2.5s forwards 1s ease;
+	animation: sql 5s forwards 1s ease;
 	width: 0%; 
 	background-color: #ffe985;
 }
 .c {
 	padding: 5px;
-	animation: c 2.5s forwards 1s ease;
+	animation: c 5.5s forwards 1s ease;
 	width: 0%; 
 	background-color: #8cf086;
 }
