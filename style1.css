@@ -42,6 +42,7 @@ a{
 .menu{
 	width: 100%;
 	background: #FF5E35;
+	height: 60px;
 }
 .menuyazı{
 	display: flex;
