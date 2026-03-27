@@ -35,13 +35,6 @@ a{
 	width:  65%;
 	margin: auto;
 	margin-top: 20px;
-}
-#karanlıkcontent{
-	color: #ccc;
-	background: #333;
-	box-shadow: 5px 0 10px #787878;
-}
-#aydınlıkcontent{
 	color: black;
 	background: #ddd;
 	box-shadow: 5px 0 10px #596260;
@@ -87,12 +80,12 @@ a{
 	margin-right: 5px;
 	border-radius: 10px;
 }
-#aydınlıkmenu .button:hover{
+.menu .button:hover{
 	background-color: rgb(53, 50, 50);
 	color: #ffffff;
 	cursor: pointer;
 }
-#aydınlıkmenu .button{
+.menu .button{
 	background-color: #fff;
 	color: rgb(0, 0, 0);
 }
@@ -103,24 +96,7 @@ a{
 #menu1 li a{
 		color: white;
 }
-#karanlıkmenu #menu1 li a{
-	color: #4b75ff;
-}
-#karanlıkmenu .button{
-	color: #ccc	;
-	background-color: rgb(14, 89, 201);
-}
-#karanlıkmenu .button:hover{
-	background-color: rgb(64, 64, 255);
-	color: #000000;
-	cursor: pointer;
-}
-#karanlıkmenu #menu1 li a:hover{
-	font-size: 25px;
-	border-bottom: 2px solid #4672fe;
-	text-shadow: 2px 0px 10px #00f;
-}
-#aydınlıkmenu #menu1 li a:hover{
+.menu #menu1 li a:hover{
 	font-size: 25px;
 	border-bottom: 2px solid #fff;
 	text-shadow: 2px 0px 10px #fff;
@@ -133,10 +109,7 @@ a{
 	line-height: 50px;
 	height: 50px;
 }
-#karanlıkmenu{
-	background: #232323;
-}
-#aydınlıkmenu{
+.menu{
 	background: #FF5E35;
 }
 #gif img{
@@ -155,13 +128,7 @@ a{
 	justify-content: space-evenly;
 	align-items: center;
 	font-size: 30px;
-	}
-	.aydınlıkfooter{
-		background: linear-gradient(to top, #000000 0%, #333333 100%);
-	}
-	.karanlıkfooter{
-		background: linear-gradient(to top, #000000 0%, #333333 100%);
-	}
+	background: linear-gradient(to top, #000000 0%, #333333 100%);
 #footer a{
 color: white;
 }
