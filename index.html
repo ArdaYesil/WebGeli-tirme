@@ -249,3 +249,11 @@
 </body>
 
 </html>
+
+<script>
+function copyEmail() {
+  const email = "yesilarda83@gmail.com";
+  navigator.clipboard.writeText(email).then(() => {
+    alert("Email kopyalandı!");
+  });
+}
