@@ -301,3 +301,87 @@ justify-content: space-evenly;
 }
 
 /* Hakkında Style Bitiş */
+
+/* Mobil Uyumluluk (Responsive Design) */
+@media only screen and (max-width: 768px) {
+	.content {
+		width: 95%;
+		padding: 15px;
+	}
+	.satır, .hobiler {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.resyazı, .metin {
+		width: 100%;
+	}
+	.menuyazı {
+		height: auto;
+		line-height: normal;
+		padding: 10px 0;
+		position: static; 
+	}
+	#menu1 {
+		font-size: 15px;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+	}
+	.menuyazı ul {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#gif img {
+		height: 150px; 
+	}
+	#footer {
+		flex-direction: column;
+		height: auto;
+		padding: 20px 0;
+		gap: 15px;
+		font-size: 20px;
+	}
+	.resim img, #resim1 {
+		max-width: 100%;
+		height: auto !important;
+	}
+}
+
+/* --- Karanlık Mod (Dark Mode) --- */
+body.dark-mode #container {
+    background-color: #333;
+    background-blend-mode: multiply;
+}
+
+body.dark-mode .content {
+    background: #2b2b2b;
+    color: #e0e0e0;
+    box-shadow: 5px 0 10px #000;
+}
+
+body.dark-mode .menuyazı {
+    background: #1a1a1a;
+}
+
+body.dark-mode .kutu {
+    background-color: #444;
+}
+
+body.dark-mode hr {
+    border-color: #444;
+}
+
+body.dark-mode a {
+    color: #66b3ff;
+}
+
+body.dark-mode .menuyazı #menu1 li a {
+    color: white; /* Menü linkleri hep beyaz kalsın */
+}
+
+body.dark-mode #footer a {
+    color: white; /* Footer linkleri beyaz */
+}
+

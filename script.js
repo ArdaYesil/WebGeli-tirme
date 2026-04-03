@@ -36,3 +36,33 @@ fetch(`https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${apiKe
 
 
 
+
+// Tema değiştirme (Dark/Light mode)
+function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+    const icon = document.getElementById("theme-icon");
+    if (document.body.classList.contains('dark-mode')) {
+        // Karanlık moddaysak, geri dönmek için ampül simgesini göster
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-lightbulb');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        // Aydınlık moddaysak, karanlık moda geçmek için ay simgesini göster
+        icon.classList.remove('fa-lightbulb');
+        icon.classList.add('fa-moon');
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+// Sayfa yüklendiğinde önceki seçimi uygula
+window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    const icon = document.getElementById("theme-icon");
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        if(icon) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-lightbulb');
+        }
+    }
+});
