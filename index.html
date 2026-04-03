@@ -252,5 +252,10 @@
 </html>
 
 <script>
-
+	function copyEmail() {
+		const email = "[Yesilarda83@gmail.com]";
+		navigator.clipboard.writeText(email).then(() => {
+			alert("Email kopyalandı!");
+		});
+	}
 </script>

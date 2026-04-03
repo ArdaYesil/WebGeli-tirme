@@ -4,12 +4,7 @@ window.onblur = () =>
 window.onfocus = () =>
   document.title = baslik;
 
-function copyEmail() {
-  const email = "[Yesilarda83@gmail.com]";
-  navigator.clipboard.writeText(email).then(() => {
-    alert("Email kopyalandı!");
-  });
-}
+
 
 // Tema değiştirme (Dark/Light mode)
 function toggleTheme() {
