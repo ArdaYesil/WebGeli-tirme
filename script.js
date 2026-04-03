@@ -42,13 +42,13 @@ function toggleTheme() {
     document.body.classList.toggle('dark-mode');
     const icon = document.getElementById("theme-icon");
     if (document.body.classList.contains('dark-mode')) {
-        // Karanlık moddaysak, geri dönmek için ampül simgesini göster
+        // Karanlık moddaysak, geri dönmek için güneş simgesini göster
         icon.classList.remove('fa-moon');
-        icon.classList.add('fa-lightbulb');
+        icon.classList.add('fa-sun');
         localStorage.setItem('theme', 'dark');
     } else {
         // Aydınlık moddaysak, karanlık moda geçmek için ay simgesini göster
-        icon.classList.remove('fa-lightbulb');
+        icon.classList.remove('fa-sun');
         icon.classList.add('fa-moon');
         localStorage.setItem('theme', 'light');
     }
@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('dark-mode');
         if(icon) {
             icon.classList.remove('fa-moon');
-            icon.classList.add('fa-lightbulb');
+            icon.classList.add('fa-sun');
         }
     }
 });
