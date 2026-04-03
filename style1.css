@@ -1,104 +1,122 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-html{
+
+html {
 	scroll-behavior: smooth;
 }
-a{
+
+a {
 	text-decoration: none;
 }
-::-webkit-scrollbar{
- width: 15px;
- background-color: #aaa;
+
+::-webkit-scrollbar {
+	width: 15px;
+	background-color: #aaa;
 }
 
-::-webkit-scrollbar-thumb{
- background-color: #777;
+::-webkit-scrollbar-thumb {
+	background-color: #777;
 }
 
-::-webkit-scrollbar-thumb:hover{
- background-color: #444;
+::-webkit-scrollbar-thumb:hover {
+	background-color: #444;
 }
 
-::-webkit-scrollbar-thumb:active{
- background-color: #555;
+::-webkit-scrollbar-thumb:active {
+	background-color: #555;
 }
-#container{
+
+#container {
 	background-image: url(./image/arkaplan.jpg);
 	width: 100%;
 }
-.content{
+
+.content {
 	padding: 22px;
 	border-radius: 18px;
-	width:  65%;
+	width: 65%;
 	margin: auto;
 	margin-top: 20px;
 	color: black;
 	background: #ddd;
 	box-shadow: 5px 0 10px #596260;
 }
-.menu{
+
+.menu {
 	width: 100%;
 }
-.menuyazı{
+
+.menuyazı {
 	display: flex;
 	justify-content: space-evenly;
 	background: #FF5E35;
 	height: 60px;
 }
-#menu1{
+
+#menu1 {
 	font-size: 22px;
-	justify-content:space-between ;
+	justify-content: space-between;
 	width: 80%;
 }
-.icon-aydinlik{
+
+.icon-aydinlik {
 	margin-right: 5px;
 	font-size: 23px;
 	color: #ffffff;
 }
-.icon-karanlik{
+
+.icon-karanlik {
 	margin-right: 5px;
 	font-size: 23px;
 	color: #4b75ff;
 }
-.menuyazı ul{
+
+.menuyazı ul {
 	display: flex;
 	list-style: none;
 }
-.button{
+
+.button {
 	text-decoration: none;
 	align-items: center;
-	transition:all 1s;
+	transition: all 1s;
 	border: none;
 	width: 100px;
 	height: 35px;
 	margin-right: 5px;
 	border-radius: 10px;
 }
-.menuyazı .button:hover{
+
+.menuyazı .button:hover {
 	background-color: rgb(53, 50, 50);
 	color: #ffffff;
 	cursor: pointer;
 }
-.menuyazı .button{
+
+.menuyazı .button {
 	background-color: #fff;
 	color: rgb(0, 0, 0);
 }
-.menuyazı ul li a{
+
+.menuyazı ul li a {
 	transition: all 1.5s;
 	padding: 6px;
 }
-#menu1 li a{
-		color: white;
+
+#menu1 li a {
+	color: white;
 }
-.menuyazı #menu1 li a:hover{
+
+.menuyazı #menu1 li a:hover {
 	font-size: 25px;
 	border-bottom: 2px solid #fff;
 	text-shadow: 2px 0px 10px #fff;
 }
-.menuyazı{
+
+.menuyazı {
 	z-index: 4;
 	position: sticky;
 	top: 0px;
@@ -106,16 +124,19 @@ a{
 	line-height: 50px;
 	height: 50px;
 }
-#gif img{
+
+#gif img {
 	width: 100%;
 	height: 350px;
 	filter: blur(7px);
 	transition: 1s;
 }
-#gif img:hover{
+
+#gif img:hover {
 	filter: blur(0px);
 }
-#footer{
+
+#footer {
 	margin-top: 20px;
 	height: 150px;
 	display: flex;
@@ -123,181 +144,213 @@ a{
 	align-items: center;
 	font-size: 30px;
 	background: linear-gradient(to top, #000000 0%, #333333 100%);
-	}
-#footer a{
-color: white;
 }
-#footer img{
+
+#footer a {
+	color: white;
+}
+
+#footer img {
 	position: relative;
 	top: 5px;
 }
-.fa-youtube{
+
+.fa-youtube {
 	color: red;
 }
-.fa-discord{
+
+.fa-discord {
 	color: #7289DA;
-}.fa-instagram{
-	background: -webkit-linear-gradient(#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
-#footer a:hover{
+
+.fa-instagram {
+	background: -webkit-linear-gradient(#5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#footer a:hover {
 	transition: all 1.5s;
-transform: scale(1.3);
+	transform: scale(1.3);
 }
-#bır:hover{
+
+#bır:hover {
 	text-shadow: 0px 2px 5px #4285F4;
 }
-#ıkı:hover{
+
+#ıkı:hover {
 	text-shadow: 0px 2px 5px pink;
 }
-#uc:hover{
+
+#uc:hover {
 	text-shadow: 0px 2px 5px rgb(0, 0, 255);
 }
-#dort:hover{
+
+#dort:hover {
 	text-shadow: 0px 2px 5px red;
 }
 
 
 /* Hakkında Style Başlangıç */
 
-.satır{
+.satır {
 	border-radius: 18px;
 	padding: 20px;
 	display: flex;
-	justify-content:space-beetwen;
+	justify-content: space-beetwen;
 }
-#resim1{
+
+#resim1 {
 	z-index: 2;
 	width: 300px;
 	border: 10px solid transparent;
 	border-image: url(./image/fire.gif) 30 stretch;
 }
-.resyazı{
+
+.resyazı {
 	width: 60%;
 	opacity: 1;
 	padding: 15px;
 }
-@keyframes y1{
-            to{
-            	opacity: 1;
-                transform: translateY(0);
-            }
+
+@keyframes y1 {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
-@keyframes x1{
-	to{
+
+@keyframes x1 {
+	to {
 		opacity: 1;
 		transform: translateX(0);
 	}
 }
-  .kutu {
-  width: 100%;
-  background-color: #ccc;
+
+.kutu {
+	width: 100%;
+	background-color: #ccc;
 }
 
 .skills {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
 }
-@keyframes html{
-	to{
+
+@keyframes html {
+	to {
 		width: 75%;
 	}
 }
-@keyframes css{
-	to{
+
+@keyframes css {
+	to {
 		width: 61%;
 	}
 }
-@keyframes js{
-	to{
+
+@keyframes js {
+	to {
 		width: 30%;
 	}
 }
-@keyframes php{
-	to{
+
+@keyframes php {
+	to {
 		width: 55%;
 	}
 }
-@keyframes python{
-	to{
+
+@keyframes python {
+	to {
 		width: 24%;
 	}
 }
-@keyframes sql{
-	to{
+
+@keyframes sql {
+	to {
 		width: 40%;
 	}
 }
-@keyframes c{
-	to{
+
+@keyframes c {
+	to {
 		width: 44%;
 	}
 }
+
 .html {
 	padding: 5px;
 	animation: html 2.5s forwards 1s ease;
-	width: 0%; 
+	width: 0%;
 	background-color: #04AA6D;
 }
+
 .css {
 	padding: 5px;
 	animation: css 3s forwards 1s ease;
-	width: 0%; 
-	background-color: 
-	#2196F3;
+	width: 0%;
+	background-color:
+		#2196F3;
 }
+
 .js {
 	padding: 5px;
 	animation: js 3.5s forwards 1s ease;
-	width: 0%; 
-	background-color: 
-	#f44336;
+	width: 0%;
+	background-color:
+		#f44336;
 }
+
 .php {
 	padding: 5px;
 	animation: php 4s forwards 1s ease;
-	width: 0%; 
+	width: 0%;
 	background-color: #808080;
 }
+
 .python {
 	padding: 5px;
 	animation: python 4.5s forwards 1s ease;
-	width: 0%; 
+	width: 0%;
 	background-color: #DA70D6;
 }
+
 .sql {
 	padding: 5px;
 	animation: sql 5s forwards 1s ease;
-	width: 0%; 
+	width: 0%;
 	background-color: #ffe985;
 }
+
 .c {
 	padding: 5px;
 	animation: c 5.5s forwards 1s ease;
-	width: 0%; 
+	width: 0%;
 	background-color: #8cf086;
 }
 
-.hobiler{
+.hobiler {
 	transition: all 10s;
-display: flex;
-justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 }
-.metin{
+
+.metin {
 	width: 50%;
 	padding: 18px;
 }
-#resim2{
+
+#resim2 {
 	width: 23%;
 }
 
-.mınecraft{
-	background: -webkit-linear-gradient(#964b00,#964b00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.mınecraft {
+	background: -webkit-linear-gradient(#964b00, #964b00);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 /* Hakkında Style Bitiş */
@@ -305,23 +358,29 @@ justify-content: space-evenly;
 /* Mobil Uyumluluk (Responsive Design) */
 @media only screen and (max-width: 768px) {
 	.content {
-		width: 95%;
+		width: 85%;
 		padding: 15px;
 	}
-	.satır, .hobiler {
+
+	.satır,
+	.hobiler {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
 	}
-	.resyazı, .metin {
+
+	.resyazı,
+	.metin {
 		width: 100%;
 	}
+
 	.menuyazı {
 		height: auto;
 		line-height: normal;
 		padding: 10px 0;
-		position: static; 
+		position: static;
 	}
+
 	#menu1 {
 		font-size: 15px;
 		width: 100%;
@@ -329,13 +388,16 @@ justify-content: space-evenly;
 		justify-content: center;
 		gap: 10px;
 	}
+
 	.menuyazı ul {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+
 	#gif img {
-		height: 150px; 
+		height: 150px;
 	}
+
 	#footer {
 		flex-direction: column;
 		height: auto;
@@ -343,7 +405,9 @@ justify-content: space-evenly;
 		gap: 15px;
 		font-size: 20px;
 	}
-	.resim img, #resim1 {
+
+	.resim img,
+	#resim1 {
 		max-width: 100%;
 		height: auto !important;
 	}
@@ -351,37 +415,38 @@ justify-content: space-evenly;
 
 /* --- Karanlık Mod (Dark Mode) --- */
 body.dark-mode #container {
-    background-color: #333;
-    background-blend-mode: multiply;
+	background-color: #333;
+	background-blend-mode: multiply;
 }
 
 body.dark-mode .content {
-    background: #2b2b2b;
-    color: #e0e0e0;
-    box-shadow: 5px 0 10px #000;
+	background: #2b2b2b;
+	color: #e0e0e0;
+	box-shadow: 5px 0 10px #000;
 }
 
 body.dark-mode .menuyazı {
-    background: #1a1a1a;
+	background: #1a1a1a;
 }
 
 body.dark-mode .kutu {
-    background-color: #444;
+	background-color: #444;
 }
 
 body.dark-mode hr {
-    border-color: #444;
+	border-color: #444;
 }
 
 body.dark-mode a {
-    color: #66b3ff;
+	color: #66b3ff;
 }
 
 body.dark-mode .menuyazı #menu1 li a {
-    color: white; /* Menü linkleri hep beyaz kalsın */
+	color: white;
+	/* Menü linkleri hep beyaz kalsın */
 }
 
 body.dark-mode #footer a {
-    color: white; /* Footer linkleri beyaz */
+	color: white;
+	/* Footer linkleri beyaz */
 }
-
