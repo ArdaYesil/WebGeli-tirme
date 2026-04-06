@@ -415,6 +415,7 @@ a {
 
 /* --- Karanlık Mod (Dark Mode) --- */
 body.dark-mode #container {
+	background-image: url(./image/arkaplan.jpg);
 	background-color: #333;
 	background-blend-mode: multiply;
 }
