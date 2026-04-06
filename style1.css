@@ -358,7 +358,7 @@ a {
 /* Mobil Uyumluluk (Responsive Design) */
 @media only screen and (max-width: 768px) {
 	.content {
-		width: 85%;
+		width: 75%;
 		padding: 15px;
 	}
 
