@@ -203,8 +203,8 @@ a {
 #resim1 {
 	z-index: 2;
 	width: 300px;
-	border: 10px solid transparent;
-	border-image: url(./image/fire.gif) 30 stretch;
+	padding: 10px;
+	background: url('./image/fire.gif') center/cover;
 }
 
 .resyazı {
